@@ -1,22 +1,54 @@
 import { useNavigate } from "react-router-dom";
 
-
-
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <div className="LandingPage Text">
-    <center>
-    <h1>Welcome to My Entertainment App</h1>
-    </center>
-<center> 
-<div>
-  <button onClick={() => navigate("/login")}>Login</button>
-  <button onClick={() => navigate("/register")}>Register</button>
+    <div>
+      <video
+        autoPlay
+        loop
+        muted
+        style={{
+          minWidth: "100%",
+          minHeight: "100%",
+          width: "auto",
+          height: "auto",
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: "-1",
+        }}
+      >
+        <source src="Assassin's Creed Shadows_ Official World Premiere Trailer.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div
+        style={{
+          position: "absolute",
+          top: "0",
+          left: "0",
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          zIndex: "1",
+        }}
+      ></div>
+      <div
+        style={{
+          position: "relative",
+          zIndex: "2",
+          textAlign: "center",
+          padding: "50px",
+          color: "white",
+        }}
+      >
+        <h1>Welcome to My Entertainment App</h1>
+        <p>This is a subtitle for your website</p>
+        <button onClick={() => navigate("/login")} className="btn btn-primary" style={{marginRight: "20px"}}>Login</button>
+        <button onClick={() => navigate("/register")} className="btn btn-primary">Register</button>
+      </div>
     </div>
-      </center>
-</div>
   );
-
-}
+};
 export default LandingPage;

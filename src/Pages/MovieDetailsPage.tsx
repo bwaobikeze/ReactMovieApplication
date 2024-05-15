@@ -13,13 +13,15 @@ const MovieDetailsPage: React.FC = () => {
         const user = auth.currentUser;
         try {
             if (user) {
-                const userDocRef = doc(db, "Movies", user.uid); 
+                const userDocRef = doc(db, "Movies", movie.id.toString()); 
                 await setDoc(userDocRef, {
+                    userId: user.uid,
                     title: movie.title,
                     release_date: movie.release_date,
                     overview: movie.overview,
                     poster_path: movie.poster_path,
-                    backdrop_path: movie.backdrop_path
+                    backdrop_path: movie.backdrop_path,
+                    id: movie.id 
                   });
             } else {
                 console.log("User not authenticated.");
