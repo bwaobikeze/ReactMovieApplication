@@ -1,5 +1,25 @@
 import '../Pages/MoviePage.css';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+
+interface Movie {
+    id: number;
+    title: string;
+    release_date: string;
+    overview: string;
+    poster_path: string;
+    backdrop_path: string;
+}
 function Moviepage() {
+    const [data, setData] = useState<Movie[]>([]);
+    useEffect(() => { 
+        const fetchData = async () => { 
+            const response = await axios.get('https://api.themoviedb.org/3/discover/movie?api_key=550576ca6fc7f4c8979fd14c73137502');
+            setData(response.data.results);
+            console.log(data[1].title);
+        };
+        fetchData();
+    }, []);
     return (
         <div className="MoviePage Text">
             <center>
