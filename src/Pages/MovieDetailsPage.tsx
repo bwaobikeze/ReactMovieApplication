@@ -4,6 +4,7 @@ import { doc, setDoc } from "firebase/firestore";
 import { useParams } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import NavigationBar from '../NavigationBar';
 const MovieDetailsPage: React.FC = () => { 
     const { id } = useParams<{ id: string }>();
     const location = useLocation();
@@ -33,6 +34,7 @@ const MovieDetailsPage: React.FC = () => {
     console.log(id);
     return (
         <div>
+            <NavigationBar />
              <button onClick={() => navigate("/movies")}>back</button>
             <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="movie poster" />
             <h1>{movie.title}</h1>

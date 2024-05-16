@@ -73,7 +73,7 @@ const Register: React.FC = () => {
             width: "100%",
             height: "100%",
             backgroundImage:
-              "url(the-creator-movie-poster-4k-wallpaper-uhdpaper.com-979@1@m.jpg)",
+              "url(spiderman-no-way-home-dr-strange-official-poster-4k-wallpaper-uhdpaper.com-318@1@e.jpg)",
             backgroundSize: "cover",
             filter: "blur(10px)",
           }}
@@ -134,7 +134,7 @@ const Register: React.FC = () => {
             className="btn btn-primary btn-lg"
             style={{ marginTop: "10px" }}
           >
-            Login
+            Register
           </button>
         </div>
       </div>
