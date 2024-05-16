@@ -18,7 +18,7 @@ This is a React application for managing your watchlist of movies.
 ## Configuration
 1. Create a Firebase project and configure Firebase for web.
 2. Add your Firebase configuration to the .env file in the root of the project:
-        ```makefile
+    ```makefile
     REACT_APP_FIREBASE_API_KEY=your_api_key_here
     REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain_here
     REACT_APP_FIREBASE_PROJECT_ID=your_project_id_here
