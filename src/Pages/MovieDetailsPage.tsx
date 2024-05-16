@@ -3,13 +3,12 @@ import { db, auth } from '../firebase';
 import { doc, setDoc } from "firebase/firestore";
 import { useParams } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 import NavigationBar from '../NavigationBar';
+
 const MovieDetailsPage: React.FC = () => { 
     const { id } = useParams<{ id: string }>();
     const location = useLocation();
     const movie = location.state.movie;
-    const navigate = useNavigate();
     const handleAdd = async () => { 
         const user = auth.currentUser;
         try {
