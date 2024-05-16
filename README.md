@@ -27,6 +27,7 @@ This is a React application for managing your watchlist of movies.
     REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket_here
     REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id_here
     REACT_APP_FIREBASE_APP_ID=your_app_id_here
+    REACT_APP_FIREBASE_MEASUREMENT_ID=your_Measurment_id
 
 3. Configure Firebase Firestore and Authentication for your project.
 
