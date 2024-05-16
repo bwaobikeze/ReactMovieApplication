@@ -5,6 +5,7 @@ import UserProfilePage from './Pages/UserProfilePage';
 import Register from './Pages/RegisterPage';
 import Login from './Pages/LoginPage';
 import MovieDetailsPage from './Pages/MovieDetailsPage';
+import SearchPage from './Pages/SearchResultPage';
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/movies/:id" element={<MovieDetailsPage />} />
+          <Route path="/search/:movie" element={<SearchPage />} />
       </Routes>
       </Router>
     </div>

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+
 export interface Movie {
   id: number;
   title: string;
@@ -25,8 +26,12 @@ const NavigationBar: React.FC = () => {
     );
     const datamovies = await response.json();
       setData(datamovies.results);
-      console.log(data[0].title);
-  };
+    };
+    useEffect(() => {
+        if (data.length > 0) {
+          navigate(`/search/${movieSearch}`, { state: { data } });
+        }
+      }, [data, movieSearch, navigate]);
   return (
     <div className="NavigationBar">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
