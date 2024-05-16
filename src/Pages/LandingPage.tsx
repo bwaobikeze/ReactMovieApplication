@@ -20,7 +20,7 @@ const LandingPage: React.FC = () => {
           zIndex: "-1",
         }}
       >
-        <source src="Assassin's Creed Shadows_ Official World Premiere Trailer.mp4" type="video/mp4" />
+        <source src="THIS IS 4K MARVEL (Ultra HD).mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div
@@ -44,7 +44,6 @@ const LandingPage: React.FC = () => {
         }}
       >
         <h1>Welcome to My Entertainment App</h1>
-        <p>This is a subtitle for your website</p>
         <button onClick={() => navigate("/login")} className="btn btn-primary" style={{marginRight: "20px"}}>Login</button>
         <button onClick={() => navigate("/register")} className="btn btn-primary">Register</button>
       </div>

@@ -26,32 +26,6 @@ const Register: React.FC = () => {
     }
   };
   return (
-    //   <div className="LandingPage Text">
-    //       <center>
-    //       <h1>Register</h1>
-    //       </center>
-    //   <center>
-    //   <div>
-    //     <input type='username'
-    //       placeholder='username'
-    //       value={username}
-    //       onChange={e => setUsername(e.target.value)} />
-    //     </div>
-    //     <div>
-    //     <input type='email'
-    //       placeholder='Email'
-    //       value={email}
-    //       onChange={e => setEmail(e.target.value)} />
-    //     </div>
-    //     <div>
-    //     <input type='password'
-    //       placeholder='Password'
-    //       value={password}
-    //     onChange={e => setPassword(e.target.value)}/>
-    //     </div>
-    //     <button onClick={HandleRegister}>Login</button>
-    //       </center>
-    // </div>
     <div className="LoginPage Text">
       <div
         className="LoginPage"

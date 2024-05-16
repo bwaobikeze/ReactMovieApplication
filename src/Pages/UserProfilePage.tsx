@@ -10,14 +10,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import NavigationBar from "../NavigationBar";
-interface Movie {
-  id: number;
-  title: string;
-  release_date: string;
-  overview: string;
-  poster_path: string;
-  backdrop_path: string;
-}
+import { Movie } from "../interfaces/MovieInterface";
 const MovieLibrary: React.FC = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [loading, setLoading] = useState<boolean>(true);

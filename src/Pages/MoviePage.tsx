@@ -2,19 +2,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import NavigationBar from "../NavigationBar";
+import { Movie } from "../interfaces/MovieInterface";
 
-export interface Movie {
-  id: number;
-  title: string;
-  release_date: string;
-  overview: string;
-  poster_path: string;
-  backdrop_path: string;
-}
+
 
 function Moviepage() {
     const [data, setData] = useState<Movie[]>([]);
-    const [page, setPage] = useState(1);
 
   const navigate = useNavigate();
   useEffect(() => {
@@ -29,18 +22,6 @@ function Moviepage() {
 
   const handleClick = (movie: Movie) => {
     navigate(`/movies/${movie.id}`, { state: { movie } });
-    };
-    const handlePrevPage = () => {
-        if (page > 1) {
-            setPage(page - 1);
-        }
-    };
-
-    const handleNextPage = () => {
-        // Assuming each page has 9 movies
-        //fetch next page of data from the API
-        
-
     };
   return (
     <div className="MoviePage Text">

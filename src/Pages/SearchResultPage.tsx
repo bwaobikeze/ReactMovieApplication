@@ -1,16 +1,7 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import NavigationBar from "../NavigationBar";
-export interface Movie {
-    id: number;
-    title: string;
-    release_date: string;
-    overview: string;
-    poster_path: string;
-    backdrop_path: string;
-  }
+import { Movie } from "../interfaces/MovieInterface";
 const SearchResultPage = () => {
     const location = useLocation();
     const navigate = useNavigate();

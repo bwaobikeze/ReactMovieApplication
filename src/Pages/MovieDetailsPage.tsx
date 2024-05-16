@@ -32,14 +32,54 @@ const MovieDetailsPage: React.FC = () => {
         }
     }
     console.log(id);
+    const overlayStyle: React.CSSProperties = {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.9) 100%)',
+        zIndex: 1,
+      };
+    
+      const imageStyle: React.CSSProperties = {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        zIndex: 0,
+    };
+    
+    const containerStyle: React.CSSProperties = {
+        position: 'absolute',
+        top: 200,
+        left: 400,
+        zIndex: 2,
+        color: 'white', // Set text color to white for better readability
+        padding: '20px', // Add some padding for spacing
+        width: '100%',
+      };
     return (
         <div>
             <NavigationBar />
-             <button onClick={() => navigate("/movies")}>back</button>
-            <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="movie poster" />
-            <h1>{movie.title}</h1>
-            <p>{movie.overview}</p>
-            <button onClick={handleAdd}>Add</button>
+            <div className="position-relative" style={{ height: '100vh' }}>
+                <div style={overlayStyle}></div>
+                <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="Background" className="img-fluid" style={imageStyle} />
+            </div>
+            <div className="container" style={containerStyle}>
+                <div className="row">
+                    <div className="col-md-4">
+                        <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="movie poster" />
+                    </div>
+                    <div className="col-md-8" style={{paddingLeft: 100}}>
+                        <h1>{movie.title}</h1>
+                        <p>{movie.overview} </p>
+                        <button className='btn btn-primary btn-lg' onClick={handleAdd}>Add</button>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
