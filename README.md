@@ -7,7 +7,7 @@ This is a React application for managing your watchlist of movies.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/bwaobikeze/ReactMovieApplication.git
 
 2. Navigate into the project directory:
     ```bash
@@ -36,5 +36,5 @@ This is a React application for managing your watchlist of movies.
 
    ```bash
    npm start
-   
+
 2. Open  [http://localhost:3000](http://localhost:3000)to view the app in your browser.
