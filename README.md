@@ -2,6 +2,13 @@
 
 This is a React application for managing your watchlist of movies.
 
+## Screenshots
+| [![landing-Page.png](https://i.postimg.cc/pLGxrzKz/landing-Page.png)](https://postimg.cc/cvnP5K9L) | [![login-Page.png](https://i.postimg.cc/jjDwvzT4/login-Page.png)](https://postimg.cc/06qyyKbz) | [![homepage.png](https://i.postimg.cc/6qMtDmL2/homepage.png)](https://postimg.cc/n99ymTWp) |
+|--------|--------|--------|
+| [![Movie-Watchlist-Page.png](https://i.postimg.cc/vmwFSyF2/Movie-Watchlist-Page.png)](https://postimg.cc/jDcFLGjy) | [![Search-Result-Page.png](https://i.postimg.cc/zGnPvR6p/Search-Result-Page.png)](https://postimg.cc/v4ZvSDQ6) |[![Movie-Detail-PAge.png](https://i.postimg.cc/tgPs69pX/Movie-Detail-PAge.png)](https://postimg.cc/nsFVbbX5) | [![register-screen.png](https://i.postimg.cc/VkFfP5f0/register-screen.png)](https://postimg.cc/v4cFWY6G) |
+
+
+
 ## Installation
 
 1. Clone the repository:
